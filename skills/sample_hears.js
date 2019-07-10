@@ -1,4 +1,4 @@
-var mylang = require('../lang');
+﻿var mylang = require('../lang');
 var fs = require('fs');
 module.exports = function (controller) {
 
@@ -10,6 +10,7 @@ module.exports = function (controller) {
       console.log("file saved");
     });
   };
+
 
   controller.hears(mylang.greetingKeywords, 'message_received', function (bot, message) {
     bot.startConversation(message, function (err, convo) {
